@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Melodi Raya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle-button">☰</div>
+    <div class="sidebar">
+        <div class="current-song-info">
+            <h2 class="current-song-title">No song selected</h2>
+            <p class="current-song-artist"></p>
+            <div class="progress-container">
+                <div class="progress-bar-top">
+                    <div class="progress-bar-fill"></div> </div>
+                <div class="time-labels">
+                    <span class="current-time">0:00</span>
+                    <span class="duration">0:00</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="control-button repeat-button">🔁</button>
+                <button class="control-button prev-button">⏮️</button>
+                <button class="control-button play-pause-button">▶️</button>
+                <button class="control-button next-button">⏭️</button>
+                <button class="control-button shuffle-button">🔀</button>
+            </div>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/aidilfitri.mp3" data-artist="Sanisah Huri">▶️</button>
+            <span class="song-title">Aidilfitri</span>
+            <span class="song-artist">Sanisah Huri</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/aidilfitri_di_alaf_baru.mp3" data-artist="Siti Nurhaliza, Noraniza Idris, Liza Hanim & Anis Suraya">▶️</button>
+            <span class="song-title">Aidilfitri Di Alaf Baru</span>
+            <span class="song-artist">Siti Nurhaliza, Noraniza Idris, Liza Hanim & Anis Suraya</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/air_mata_syawal.mp3" data-artist="Siti Nurhaliza">▶️</button>
+            <span class="song-title">Air Mata Syawal</span>
+            <span class="song-artist">Siti Nurhaliza</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/alamak_raya_lagi.mp3" data-artist="De Fam">▶️</button>
+            <span class="song-title">Alamak Raya Lagi</span>
+            <span class="song-artist">De Fam</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/anugerah_aidilfitri.mp3" data-artist="Siti Nurhaliza">▶️</button>
+            <span class="song-title">Anugerah Aidilfitri</span>
+            <span class="song-artist">Siti Nurhaliza</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/balik_kampung.mp3" data-artist="Sudirman">▶️</button>
+            <span class="song-title">Balik Kampung</span>
+            <span class="song-artist">Sudirman</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/bila takbir bergema.mp3" data-artist="Rafeah Buang">▶️</button>
+            <span class="song-title">Bila Takbir Bergema</span>
+            <span class="song-artist">Rafeah Buang</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/cahaya_aidilfitri.mp3" data-artist="Black Dog Bone">▶️</button>
+            <span class="song-title">Cahaya Aidilfitri</span>
+            <span class="song-artist">Black Dog Bone</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/dari_jauh_ku_pohon_maaf.mp3" data-artist="Sudirman">▶️</button>
+            <span class="song-title">Dari Jauh Ku Pohon Maaf</span>
+            <span class="song-artist">Sudirman</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/dendang_perantau.mp3" data-artist="P. Ramlee">▶️</button>
+            <span class="song-title">Dendang Perantau</span>
+            <span class="song-artist">P. Ramlee</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/hang_pi_raya.mp3" data-artist="Khalifah">▶️</button>
+            <span class="song-title">Hang Pi Raya</span>
+            <span class="song-artist">Khalifah</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/hari_mulia.mp3" data-artist="Sheila Majid">▶️</button>
+            <span class="song-title">Hari Mulia</span>
+            <span class="song-artist">Sheila Majid</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/hari_raya_hari_bahagia.mp3" data-artist="Ramlah Ram">▶️</button>
+            <span class="song-title">Hari Raya Hari Bahagia</span>
+            <span class="song-artist">Ramlah Ram</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/indahnya_beraya_di_desa.mp3" data-artist="Azlina Aziz">▶️</button>
+            <span class="song-title">Indahnya Beraya Di Desa</span>
+            <span class="song-artist">Azlina Aziz</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/kepulangan_yang_di_nanti.mp3" data-artist="Aman Shah">▶️</button>
+            <span class="song-title">Kepulangan Yang Di Nanti</span>
+            <span class="song-artist">Aman Shah</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/ku_pohon_restu_ayah_bonda.mp3" data-artist="Mamat Exists">▶️</button>
+            <span class="song-title">Ku Pohon Restu Ayah Bonda</span>
+            <span class="song-artist">Mamat Exists</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/manis_manis_lebaran.mp3" data-artist="Sofaz, New Boyz, Lips & Saidatul Erma">▶️</button>
+            <span class="song-title">Manis Manis Lebaran</span>
+            <span class="song-artist">Sofaz, New Boyz, Lips & Saidatul Erma</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/menjelang_hari_raya.mp3" data-artist="DJ Dave">▶️</button>
+            <span class="song-title">Menjelang Hari Raya</span>
+            <span class="song-artist">DJ Dave</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/meriah_lain_macam.mp3" data-artist="Hael Husaini & Nadeera">▶️</button>
+            <span class="song-title">Meriah Lain Macam</span>
+            <span class="song-artist">Hael Husaini & Nadeera</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/meriah_suasana_hari_raya.mp3" data-artist="Siti Nurhaliza">▶️</button>
+            <span class="song-title">Meriah Suasana Hari Raya</span>
+            <span class="song-artist">Siti Nurhaliza</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/nazam_lebaran.mp3" data-artist="Siti Nurhaliza">▶️</button>
+            <span class="song-title">Nazam Lebaran</span>
+            <span class="song-artist">Siti Nurhaliza</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/nikmat_hari_raya.mp3" data-artist="Siti Nurhaliza, Noraniza Idris, New Boyz & Aqasha">▶️</button>
+            <span class="song-title">Nikmat Hari Raya</span>
+            <span class="song-artist">Siti Nurhaliza, Noraniza Idris, New Boyz & Aqasha</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/pulang_di_hari_raya.mp3" data-artist="Noorkumalasari">▶️</button>
+            <span class="song-title">Pulang Di Hari Raya</span>
+            <span class="song-artist">Noorkumalasari</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/rap_der_raya.mp3" data-artist="Yonnyboii, Luca Sickta, Kmy Kmo, Abubakarxli, Siqma, ASYRAF NASIR">▶️</button>
+            <span class="song-title">Rap Der Raya</span>
+            <span class="song-artist">Yonnyboii, Luca Sickta, Kmy Kmo, Abubakarxli, Siqma, ASYRAF NASIR</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/raya_raya_raya.mp3" data-artist="DOLLA">▶️</button>
+            <span class="song-title">Raya Raya Raya</span>
+            <span class="song-artist">DOLLA</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/salam_aidilfitri.mp3" data-artist="Jamal Abdillah">▶️</button>
+            <span class="song-title">Salam Aidilfitri</span>
+            <span class="song-artist">Jamal Abdillah</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/satu_hari_di_hari_raya.mp3" data-artist="M. Nasir">▶️</button>
+            <span class="song-title">Satu Hari Di Hari Raya</span>
+            <span class="song-artist">M. Nasir</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/selamat_berhari_raya.mp3" data-artist="Rahimah Rahim">▶️</button>
+            <span class="song-title">Selamat Berhari Raya</span>
+            <span class="song-artist">Rahimah Rahim</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/selamat_hari_raya_jais.mp3" data-artist="Ahmad Jais">▶️</button>
+            <span class="song-title">Selamat Hari Raya</span>
+            <span class="song-artist">Ahmad Jais</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/selamat_hari_raya_fazidah.mp3" data-artist="Fazidah Joned">▶️</button>
+            <span class="song-title">Selamat Hari Raya</span>
+            <span class="song-artist">Fazidah Joned</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/selamat_hari_raya_saloma.mp3" data-artist="Saloma">▶️</button>
+            <span class="song-title">Selamat Hari Raya</span>
+            <span class="song-artist">Saloma</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/seloka_hari_raya.mp3" data-artist="Uji Rashid & Hail Amir">▶️</button>
+            <span class="song-title">Seloka Hari Raya</span>
+            <span class="song-artist">Uji Rashid & Hail Amir</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/senandung_hari_raya_untukmu.mp3" data-artist="Dayangku Intan">▶️</button>
+            <span class="song-title">Senandung Hari Raya Untukmu</span>
+            <span class="song-artist">Dayangku Intan</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/serumpun.mp3" data-artist="MIMIFLY">▶️</button>
+            <span class="song-title">Serumpun</span>
+            <span class="song-artist">MIMIFLY</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/sesuci_lebaran.mp3" data-artist="Siti Nurhaliza">▶️</button>
+            <span class="song-title">Sesuci Lebaran</span>
+            <span class="song-artist">Siti Nurhaliza</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/suasana_di_hari_raya.mp3" data-artist="Anuar & Ellina">▶️</button>
+            <span class="song-title">Suasana Di Hari Raya</span>
+            <span class="song-artist">Anuar & Ellina</span>
+        </div>
+        <div class="song-item">
+            <button class="play-button" data-src="assets/songs/suasana_riang_di_hari_raya.mp3" data-artist="Junainah M. Amin">▶️</button>
+            <span class="song-title">Suasana Riang Di Hari Raya</span>
+            <span class="song-artist">Junainah M. Amin</span>
+        </div>
+        <div class="footer">
+            Made by Syed | Melodi Raya 🎵
+        </div>
+    </div>
+    <div class="main-content">
+    </div>
+
+    <audio id="audio-player" controls style="display: none;"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

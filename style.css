@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url('assets/rumahkampung2.png');
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #2e6c43;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+    border: 5px solid black;
+    border-radius: 4px;
+    padding-top: 150px; /* Adjust to accommodate the new player section */
+    box-sizing: border-box;
+    color: whitesmoke; /* Set default text color in sidebar */
+}
+
+.sidebar.hidden {
+    transform: translateX(-300px);
+}
+
+/* Styles for the current song info section */
+.current-song-info {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555;
+}
+
+.current-song-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.current-song-artist {
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.progress-bar-top {
+    width: 100%;
+    height: 5px;
+    background-color: #ddd; /* Background color of the empty bar */
+    border-radius: 2.5px;
+    position: relative; /* Important for positioning the fill */
+    cursor: pointer;
+}
+
+.progress-bar-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%; /* Initial width */
+    height: 100%;
+    background-color: orange; /* Color of the progress */
+    border-radius: 2.5px;
+    /* Optional: Add a transition for smoother progress */
+    transition: width 0.1s linear;
+}
+
+.time-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between; /* Change to space-between */
+    align-items: center;
+    margin: 0 5px; /* Add some horizontal margin to the container */
+}
+
+.control-button {
+    background-color: #007bff; /* Blue background color */
+    border: none;
+    color: whitesmoke; /* White icon/text color */
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 2px 4px; /* Reduce padding */
+    border-radius: 5px; /* Add some rounded corners */
+    opacity: 0.8; /* Slightly transparent by default */
+    transition: opacity 0.2s ease-in-out; /* Smooth hover effect */
+    margin: 0 2px; /* Add a small margin between buttons */
+}
+
+.control-button:hover {
+    opacity: 1; /* Fully opaque on hover */
+}
+
+.control-button.active {
+    background-color: orange; /* Highlight color when active */
+    color: black; /* Change icon/text color when active */
+}
+
+.song-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.song-item .play-button {
+    margin-right: 0;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background: none; /* Remove default button background */
+    border: none;
+    color: whitesmoke;
+    font-size: 1.2em;
+    padding: 0;
+}
+
+.song-item .song-title {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.song-item .song-artist {
+    font-weight: normal;
+    font-size: 0.85em;
+    color: #aaa;
+}
+
+.song-item .progress-bar-container {
+    display: none; /* Hide the old progress bar */
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    color: whitesmoke;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 300px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.main-content.sidebar-hidden {
+    margin-left: 0;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    background-color: #f3e2b3;
+    padding: 10px;
+    border-radius: 5px;
+    border: 4px solid black;
+    z-index: 10;
+}
